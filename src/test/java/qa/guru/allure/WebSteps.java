@@ -34,6 +34,6 @@ public class WebSteps {
 
     @Step("Проверяем наличие Issue с именем {issueName}")
     public void shouldSeeIssueWithName(String issueName) {
-        $(byText(issueName)).shouldHave(visible);
+        $(byText(issueName)).shouldBe(visible);
     }
 }
